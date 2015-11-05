@@ -3,12 +3,15 @@ body {
 }
 
 #ipad-wrapper {
-	width: 1200px;
-	height: 800px;
+	width: 1100px;
+	height: 900px;
 	background: #000;
+	text-align: center;
+	border-radius: 30px;
 }
 
 #ipad-wrapper .container {
 	width: 1024px;
 	height: 768px;
+	margin-top: 82;
 }
