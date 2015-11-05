@@ -1,0 +1,13 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "Digital Pages",
+      "htmlOption": "jade",
+      "jsPreprocessor": "none",
+      "cssOption": "sass",
+      "sassSyntax": "sass",
+      "testFramework": "mocha"
+    },
+    "version": "1.4.0"
+  }
+}
