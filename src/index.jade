@@ -3,9 +3,17 @@ extends _layouts/base
 include _modules/link/link
 
 block content
-  h1 Experiment
-  h2 Static Digital Pages - Testing
-  #ipad-wrapper
-    .container
-      img(src='images/01.jpg')
-  code.version v1.4.0
+  .main
+    h1 Experiment
+    h2 Static Digital Pages - Testing
+    #list
+      each val, index in ['01','02','03','04','05','06','07','08','10']
+        .page
+          .left
+            img(src='images/' + val + '.jpg')
+          .right
+            .title Nice transition between two layers
+    //#ipad-wrapper
+    //  .container
+    //    img(src='images/01.jpg')
+  //code.version v1.4.0
