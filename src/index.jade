@@ -7,12 +7,13 @@ block content
     h1 Experiment
     h2 Static Digital Pages - Testing
     #list
-      each val, index in ['01','02','03','04','05','06','07','08','10']
+      each val, index in site.data.pages
         .page
           .left
-            img(src='images/' + val + '.jpg')
+            a(href="page.html?page=" + val.thumb)
+              img(src='images/' + val.thumb)
           .right
-            .title Nice transition between two layers
+            .title=val.name
     //#ipad-wrapper
     //  .container
     //    img(src='images/01.jpg')

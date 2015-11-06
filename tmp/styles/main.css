@@ -452,9 +452,10 @@ body .main #list {
 }
 
 body .main #list .page {
-  border-bottom: 1px solid #000;
   float: left;
   width: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #000;
 }
 
 body .main #list .page .left {
@@ -463,9 +464,8 @@ body .main #list .page .left {
 }
 
 body .main #list .page .left img {
-  width: 200px;
+  width: 100%;
   float: left;
-  margin: 10px;
 }
 
 body .main #list .page .right {
@@ -476,6 +476,24 @@ body .main #list .page .right {
 body .main #list .page .right .title {
   margin: 10px;
   float: left;
+}
+
+body .main #nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body .main #nav li {
+  float: left;
+  margin: 10px;
+}
+
+body .main .button {
+  background: #000;
+  color: #FFF;
+  padding: 10px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
