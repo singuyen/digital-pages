@@ -9286,17 +9286,71 @@ $(function() {
 
 		if (x >=0 && x < 300 && y >= 200) {
 			$('#info-box .event').text('Event: Prev');
-		}
+			var aLeft = mainStage.getChildByName('arrowLeft');
+
+			createjs.Tween.get(aLeft, { loop: false })
+			.to({ alpha: 1 }, 500)
+			.to({ alpha: 0 }, 500);
+			}
 
 		if (x >= 300 && y >= 200) {
 			$('#info-box .event').text('Event: Next');
-		}		
+
+			var aRight = mainStage.getChildByName('arrowRight');
+			createjs.Tween.get(aRight, { loop: false })
+			.to({ alpha: 1 }, 500)
+			.to({ alpha: 0 }, 500);
+			}
+
 
 	});
 
 
 
 });
+
+
+window.mainStage = (function(){
+
+	var stage = new createjs.Stage("event-zone");
+
+
+
+	var arrowLeft = new createjs.Bitmap("images/arrow-left.png");
+	arrowLeft.x = 50;
+	arrowLeft.y = 600;
+	arrowLeft.alpha = 0;
+	arrowLeft.name = "arrowLeft";
+
+
+	var arrowRight = new createjs.Bitmap("images/arrow-right.png");
+	arrowRight.x = 850;
+	arrowRight.y = 600;
+	arrowRight.alpha = 0;
+	arrowRight.name = "arrowRight";
+
+	stage.addChild(arrowLeft);
+	stage.addChild(arrowRight);
+
+
+	stage.update();
+
+	
+/*
+	createjs.Tween.get(arrowLeft, { loop: true })
+	.to({ y: -10 }, 3000)
+	.to({ y: 0 }, 3000);
+	*/
+
+	createjs.Ticker.setFPS(60);
+	createjs.Ticker.addEventListener("tick", stage);
+
+	return stage;
+
+
+})();
+
+
 
 },{"../_modules/link/link":2,"jquery":1}]},{},[3])
 
