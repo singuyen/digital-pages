@@ -1,7 +1,12 @@
 [
 	{
-		"name":"Transition between 2 layers - Candle flickering",
+		"name":"Exp 1: Transition between 2 layers - Candle flickering",
 		"thumb":"03.jpg",
 		"index":"page-01"
+	},
+	{
+		"name":"Exp 2: Moving layer",
+		"thumb":"01.jpg",
+		"index":"page-02"
 	}
 ]

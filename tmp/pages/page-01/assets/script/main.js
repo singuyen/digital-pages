@@ -23,8 +23,12 @@
 	}
 
 	createjs.Tween.get(layer02, { loop: true })
-	.to({ alpha: 0 }, getRandomInt(1,5))
-	.to({ alpha: 1 }, getRandomInt(1,5));
+	.to({ alpha: 0 }, 100)
+	.to({ alpha: 1 }, 300)
+	.to({ alpha: 0 }, 200)
+	.to({ alpha: 1 }, 200)
+	.to({ alpha: 0 }, 400)
+	.to({ alpha: 1 }, 100);
 
 	createjs.Ticker.setFPS(60);
 	createjs.Ticker.addEventListener("tick", stage);
