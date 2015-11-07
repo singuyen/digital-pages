@@ -1,22 +1,7 @@
 [
 	{
-		"name":"Transition between three layers",
-		"thumb":"05.jpg"
-	},
-	{
-		"name":"Three frames animation",
-		"thumb":"02.jpg"
-	},
-	{
-		"name":"Transition between 2 layers",
-		"thumb":"03.jpg"
-	},
-	{
-		"name":"Moving layer under mask",
-		"thumb":"01.jpg"
-	},
-	{
-		"name":"Sun flare",
-		"thumb":"06.jpg"
+		"name":"Transition between 2 layers - Candle flickering",
+		"thumb":"03.jpg",
+		"index":"page-01"
 	}
 ]

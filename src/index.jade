@@ -10,7 +10,7 @@ block content
       each val, index in site.data.pages
         .page
           .left
-            a(href="page.html?page=" + val.thumb)
+            a(href="page.html?page=" + val.thumb + "&index=" + val.index)
               img(src='images/' + val.thumb)
           .right
             .title=val.name

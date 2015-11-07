@@ -9246,9 +9246,9 @@ $(function() {
 
 
   var page = getParameterByName('page');
-  var image = 'images/' + page;
+  var index = 'pages/' + getParameterByName('index');
 
-  $('#ipad-wrapper .container').find('img').attr('src',image)
+  $('#ipad-wrapper .container').find('iframe').attr('src',index);
 
 
 

@@ -423,9 +423,33 @@ body {
   background: #CCC;
 }
 
+body iframe {
+  border: none;
+  width: 1024px;
+  height: 768px;
+}
+
+body #nav-menu {
+  max-width: 1280px;
+  margin: auto;
+  padding: 10px;
+  height: 50px;
+}
+
+body #nav-menu a {
+  display: block;
+  float: left;
+  padding: 10px;
+  text-decoration: none;
+  color: #FFF;
+  background: #000;
+  margin: 1px;
+}
+
 body .main {
   margin: auto;
   max-width: 1280px;
+  padding: 10px;
 }
 
 body .main #ipad-wrapper {
@@ -444,6 +468,7 @@ body .main #ipad-wrapper .container {
   position: absolute;
   top: 41px;
   left: 38px;
+  background: #FFF;
 }
 
 body .main #list {
