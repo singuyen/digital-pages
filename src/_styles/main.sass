@@ -16,6 +16,17 @@
 body
   background: #CCC
 
+  #info-box
+    position: fixed
+    top: 0
+    right: 0
+    background: rgba(0,0,0,.6)
+    width: 200px
+    height: 400px
+    padding: 20px
+    font-size: 0.8em
+    color: #FFF
+
   iframe
     border: none
     width: 1024px
@@ -25,7 +36,6 @@ body
     margin: auto
     padding: 10px
     height: 50px
-
     a
       display: block
       float: left
@@ -34,7 +44,6 @@ body
       color: #FFF
       background: #000
       margin: 1px
-
   .main
     margin: auto
     max-width: 1280px
@@ -53,7 +62,28 @@ body
         position: absolute
         top: 41px
         left: 38px
-        background: #00
+        background: #000
+        overflow: hidden
+
+
+        #event-zone
+          position: absolute
+          width: 100%
+          height: 100%
+          top: 0px
+          right: 0
+          z-index: 1
+
+        #top-nav
+          border: 1px solid #000
+          width: 1024px
+          height: 200px
+          background: rgba(0,0,0,.8)
+          position: absolute
+          top: -200px
+          left: 0
+          z-index: 2
+          -webkit-transition: all 0.3s
 
     #list
       float: left

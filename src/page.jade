@@ -1,9 +1,11 @@
-extends _layouts/base
+extends _layouts/landing
 
 include _modules/link/link
 
 block content
-  .main
-    #ipad-wrapper
-      .container
-        iframe(src="pages/page-01/index.html",scrolling="no")
+	.main
+		#ipad-wrapper
+			.container
+				canvas#event-zone(width=1024,height=768)
+				#top-nav
+				iframe(src="pages/page-01/index.html",scrolling="no")
