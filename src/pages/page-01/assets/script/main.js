@@ -1,17 +1,24 @@
 (function(){
 
 
+	var queue = new createjs.LoadQueue(true);
+	queue.loadFile("assets/images/layer01.jpg");
+	queue.loadFile("assets/images/layer02.jpg");
+	queue.loadFile("assets/sounds/thewood.mp3");
+	queue.on("complete", function(e){
 
-	var preload = new createjs.LoadQueue();
-	preload.addEventListener("fileload", function(e){ 
+
+		console.log(e);
 		var bgmusic = "thewood";
 		createjs.Sound.registerSound("assets/sounds/thewood.mp3", bgmusic);
-		setTimeout(function(){	
-			var bg = createjs.Sound.play(bgmusic,{loop:200});
-			bg.volume = 0.2;
+		setTimeout(function(){
+		var bg = createjs.Sound.play(bgmusic,{loop:200});
+		bg.volume = 0.2;
 		},1000);
-	});
-	preload.loadFile("assets/sounds/thewood.mp3");
+
+	}, this);
+
+	queue.load();
 
 	var stage = new createjs.Stage("demoCanvas");
 
