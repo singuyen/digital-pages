@@ -7,7 +7,7 @@
 	setTimeout(function(){
 		var bg = createjs.Sound.play(bgmusic,{loop:200});
 		bg.volume = 0.2;
-	},1500);
+	},3000);
 
 	var stage = new createjs.Stage("demoCanvas");
 
