@@ -2,10 +2,10 @@
 
 
 
-		var bgmusic = "thewood";
-		createjs.Sound.registerSound("assets/sounds/thewood.mp3", bgmusic);
+	var bgmusic = "thewood";
+	createjs.Sound.registerSound("assets/sounds/thewood.mp3", bgmusic);
 	setTimeout(function(){
-		var bg = createjs.Sound.play(bgmusic);
+		var bg = createjs.Sound.play(bgmusic,{loop:200});
 		bg.volume = 0.2;
 	},1500);
 
