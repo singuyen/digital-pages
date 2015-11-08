@@ -9268,6 +9268,19 @@ $(function() {
 		}
 	});
 
+
+
+
+
+
+	var soundID = "Bell";
+
+	function loadSound () {
+		createjs.Sound.registerSound("sounds/bell.mp3", soundID);
+	}
+	loadSound();
+
+
 	var menuToggle = false;
 	$('#event-zone').on('click',function(e){
 
@@ -9279,6 +9292,8 @@ $(function() {
 		if ((x>=0 && x<=1024) && (y>=0 && y<=200) && !menuToggle) {
 			$('#info-box .event').text('Event: Menu triggered');
 			$('#top-nav').css({'top':0});
+			var mySound = createjs.Sound.play(soundID);
+			mySound.volume = 0.2;
 			menuToggle = true;
 		}
 
@@ -9286,6 +9301,8 @@ $(function() {
 
 		if (x >=0 && x < 300 && y >= 200) {
 			$('#info-box .event').text('Event: Prev');
+			var mySound = createjs.Sound.play(soundID);
+			mySound.volume = 0.2;
 			var aLeft = mainStage.getChildByName('arrowLeft');
 
 			createjs.Tween.get(aLeft, { loop: false })
@@ -9295,6 +9312,9 @@ $(function() {
 
 		if (x >= 300 && y >= 200) {
 			$('#info-box .event').text('Event: Next');
+
+			var mySound = createjs.Sound.play(soundID);
+			mySound.volume = 0.2;
 
 			var aRight = mainStage.getChildByName('arrowRight');
 			createjs.Tween.get(aRight, { loop: false })

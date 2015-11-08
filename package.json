@@ -72,6 +72,7 @@
       "//": "Directories relative to `source` directory",
       "modules": "_modules",
       "layouts": "_layouts",
+      "sounds": "_sounds",
       "images": "_images",
       "styles": "_styles",
       "scripts": "_scripts",
